@@ -1,0 +1,31 @@
+{
+  "name": "vue-hex-mixins",
+  "main": "src/HexMixins.vue",
+  "description": "Mixins for Hex Vue components",
+  "author": "Curtis Blackwell <blackwell.curtis@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "vue": "^2.0.1"
+  },
+  "maintainers": [
+    {
+      "name": "Curtis Blackwell",
+      "email": "curtis@lionsmouth.digital",
+      "web": "http://lionsmouth.digital"
+    },
+    {
+      "name": "James Blair",
+      "email": "james@lionsmouth.digital",
+      "web": "http://lionsmouth.digital"
+    }
+  ],
+  "bugs": {
+    "web": "https://github.com/LionsMouthDigital/Hex/issues"
+  },
+  "repository": [
+    {
+      "type": "git",
+      "url": "https://github.com/LionsMouthDigital/vue-hex-mixins.git"
+    }
+  ]
+}
