@@ -3,7 +3,6 @@
   "main": "src/HexMixins.vue",
   "description": "Mixins for Hex Vue components",
   "author": "Curtis Blackwell <blackwell.curtis@gmail.com>",
-  "private": true,
   "dependencies": {
     "vue": "^2.0.1"
   },
