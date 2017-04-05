@@ -1,5 +1,5 @@
 <script>
-  // Stolen from Jack McDade.
+  // Original concept stolen from Jack McDade.
   export default {
     props: {
       endpoint: {
