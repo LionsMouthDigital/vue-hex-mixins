@@ -7,10 +7,7 @@
         default: false,
       },
 
-      preload: {
-        type:    [String, Boolean],
-        default: false,
-      },
+      hydrateKey: String,
     },
 
 
@@ -35,16 +32,13 @@
       },
 
       hydrateFromPreload() {
-        // Parse preloaded data into object if it's JSON.
-        window.hydratablePreload = typeof window.hydratablePreload === 'string'
-          ? JSON.parse(window.hydratablePreload)
-          : window.hydratablePreload;
+        // Use data from a specific key if provided.
+        let items = this.hydrateKey
+          ? window.hexHydrant[this.hydrateKey]
+          : window.hexHydrant;
 
-        // Use preloaded data from a specific key if a string was provided in the `preload` prop,
-        // otherwise just use the whole array.
-        this.items = (typeof this.preload === 'string')
-          ? window.hydratablePreload
-          : window.hydratablePreload[this.preload];
+        // Parse preloaded data if JSON.
+        this.items = typeof items === 'string' ? JSON.parse(items) : items;
 
         this.loading = false;
       }
